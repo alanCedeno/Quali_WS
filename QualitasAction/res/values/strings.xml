@@ -8,5 +8,26 @@
     <string name="menu_nuevo">Nuevo</string>
     <string name="tab_1">Tab 1</string>
     <string name="tab_2">Tab 2</string>
+    <string name="titulo_coberturas">Coberturas</string>
+    <string name="cobertura_danos">Daños materiales</string>
+    <string name="cobertura_robo">Robo Total</string>
+    <string name="cobertura_resp_civil">Responsabilidad Civil</string>
+    <string name="cobertura_resp_civil_ext">Responsabilidad Civil en el Extranjero</string>
+    <string name="cobertura_rc_complementaria">RC Complementaria Personas</string>
+    <string name="cobertura_rc_ocupantes">RC Ocupantes</string>
+    <string name="cobertura_gastos_medicos">Gastos Médicos Ocupantes</string>
+    <string name="cobertura_muerte_conductor">Muerte al conductor</string>
+    <string name="cobertura_gastos_legales">Gastos Legales</string>
+    <string name="cobertura_asistencia_vial">Asistencia Vial</string>
+    <string name="cobertura_extension_cobertura">Extensión de Cobertura</string>
+    <string name="cobertura_gastos_transporte">Gastos de Transporte</string>
+    <string name="cobertura_robo_parcial">Robo Parcial</string>
+    <string name="cobertura_danos_materiales_rines">Daños Materiales para Neumáticos y Rines</string>
+    <string name="cobertura_equipo_especial">Equipo Especial</string>
+    <string name="titulo_suma_asegurada">Suma Asegurada</string>
+    <string name="suma_asegurada_amparado">Amparado</string>
+    <string name="titulo_deducible">Deducibles</string>
+    <string name="deducible_sin_deducible">Sin Deducible</string>
+    <string name="titulo_primas">Primas</string>  
 
 </resources>

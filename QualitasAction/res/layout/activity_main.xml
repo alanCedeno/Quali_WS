@@ -16,34 +16,502 @@
         android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="30"
             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvCoberturas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/titulo_coberturas" />
+
+            <TextView
+                android:id="@+id/tvDanos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_danos"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvRoboTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="@string/cobertura_robo" />
+
+            <TextView
+                android:id="@+id/tvResponsabilidadCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_resp_civil" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvResponsabilidadCivilExtranjero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_resp_civil_ext"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkRCComplementaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_rc_complementaria"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkRCOcupantes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_rc_ocupantes"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvGastosMedicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_gastos_medicos" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvMuerteConductor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_muerte_conductor"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvGastosLegales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_gastos_legales"
+                android:layout_marginLeft="30dp" />
+
+            <CheckBox
+                android:id="@+id/checkAsistenciaVial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_asistencia_vial"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkExtensionCobertura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_extension_cobertura"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkGastosTransporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_gastos_transporte"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkRoboParcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_robo_parcial"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkDanosMateriales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_danos_materiales_rines"
+                android:textSize="12sp" />
+
+            <CheckBox
+                android:id="@+id/checkEquipoEspecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cobertura_equipo_especial"
+                android:textSize="12sp" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="25"
             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSumaAsegurada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/titulo_suma_asegurada" />
+
+            <TextView
+                android:id="@+id/tvCantDanosMateriales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantRoboTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <Spinner
+                android:id="@+id/spResponsabilidadCivil"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvcantResponsabilidadCivilExtranjero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado" 
+                android:layout_marginLeft="30dp"/>
+
+            <Spinner
+                android:id="@+id/spRCComplementaria"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantRCOcupantes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <Spinner
+                android:id="@+id/spGastosMedicos"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <Spinner
+                android:id="@+id/spMuerteConductor"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantGastosLegales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado"
+                android:layout_marginLeft="30dp"
+                 />
+
+            <TextView
+                android:id="@+id/tvCantAsistenciaVial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantExtensionCobertura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantGastosTransporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvCantRoboParcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvCantidadDanosNeumaticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/suma_asegurada_amparado" 
+                android:layout_marginLeft="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp" >
+
+                <EditText
+                    android:id="@+id/etEquipoEspecial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:background="@drawable/flechita01"
+                    android:text="" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="25"
             android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/titulo_deducible" />
+
+            <Spinner
+                android:id="@+id/spDedDanosMat"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <Spinner
+                android:id="@+id/spDedRoboTotal"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedRespCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedRespCivilExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedRCComp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvDedRCOcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvDedGastosMedicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedMuerteConductor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvDedGastosLegales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvDedAsistenciaVial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedExtCobertura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedGastosTrans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedRoboParcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deducible_sin_deducible" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvDedDanosNeumaticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvDedEquipoEspecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:layout_marginLeft="30dp" />
+
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="20"
             android:orientation="vertical" >
-        </LinearLayout>
 
+            <TextView
+                android:id="@+id/tvPrimas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/titulo_primas" />
+
+            <TextView
+                android:id="@+id/tvPrimMateriales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimRoboTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimRespCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimRespCivilExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvPrimRCComp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimOcu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvPrimGastosMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimMuerteCond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimGastosLegales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimAsistenciaVial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimExtCober"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" 
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/tvPrimGastosTransporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimRoboParcial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimDanosMatNeumaticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrimEquipoEspecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="30dp" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
+
     </LinearLayout>
 
 </LinearLayout>
