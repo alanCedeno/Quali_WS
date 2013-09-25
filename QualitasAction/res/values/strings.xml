@@ -8,6 +8,19 @@
     <string name="menu_nuevo">Nuevo</string>
     <string name="tab_1">Tab 1</string>
     <string name="tab_2">Tab 2</string>
+
+ <!-- HEADERS STRINGS  -->
+    
+     <color name="division">#efefef</color>
+     
+    
+    <!-- FOOTER STRINGS --> 
+     <string name="f_primaNeta">Prima neta</string>
+     <string name="f_recPagoFrac">Recargo de pago fraccionado</string>
+     <string name="f_derPol">Derecho de póliza</string>
+     <string name="f_subtotal">Subtotal</string>
+     <string name="f_iva">IVA</string>
+     <string name="f_total">Total</string>
     <string name="titulo_coberturas">Coberturas</string>
     <string name="cobertura_danos">Daños materiales</string>
     <string name="cobertura_robo">Robo Total</string>
